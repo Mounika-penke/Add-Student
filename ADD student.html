@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student Manager </title>
+        <style>
+            h1{
+                text-align: center;
+                margin-top: 140px;
+                
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 40px;
+               
+
+            }
+            .button{
+                width:220px;
+                height: 25px;
+                background-color: rgb(16, 178, 241);
+                border-radius: 5px;
+                margin-bottom: 10px;
+               
+                
+               
+            }
+            input{
+                width:220px;
+                height: 25px;
+                
+            }
+            .f1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Student Manager</h1>
+        <form>
+            <div class="container">
+                <input id="nameInput" type="text " placeholder="name"><br>
+                <input id="ageInput" type="number"  placeholder="Age"><br>
+                <input id="courseInput" type="text" placeholder="course"><br>
+                <button onclick="addStudent(event)" class="button">Add Student</button>
+            </div>
+
+            <div class="f1" id="studentList"></div>
+        </form>
+        <script src="addlinking.js.js"></script>
+    </body>
+</html>
